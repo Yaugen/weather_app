@@ -1,4 +1,4 @@
-export interface LocationData {
+interface LocationData {
   id: string;
   label: string;
   lat: number;
@@ -6,7 +6,7 @@ export interface LocationData {
   isCurrent: boolean;
 }
 
-export interface LocationInput {
+interface LocationInput {
   id?: string;
   label?: string;
   lat: number;

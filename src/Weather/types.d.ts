@@ -1,4 +1,4 @@
-export interface TemperatureData {
+interface TemperatureData {
   day: number;
   min: number;
   max: number;
@@ -6,19 +6,19 @@ export interface TemperatureData {
   eve: number;
   morn: number;
 }
-export interface FeelsLike {
+interface FeelsLike {
   day: number;
   night: number;
   eve: number;
   morn: number;
 }
-export interface WeatherItem {
+interface WeatherItem {
   id: number;
   main: string;
   description: string;
   icon: string;
 }
-export interface DailyWeatherItem {
+interface DailyWeatherItem {
   dt: number;
   sunrise: number;
   sunset: number;
@@ -35,7 +35,7 @@ export interface DailyWeatherItem {
   rain: number;
   uvi: number;
 }
-export interface OpenWeatherOneCallResponse {
+interface OpenWeatherOneCallResponse {
   lat: number;
   lon: number;
   timezone: string;
